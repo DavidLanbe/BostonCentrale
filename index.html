@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
+    <!--
+                                                
+    <div class="nav" id="nav">
+        <img src="img/netflix-logo.png" alt="netflix logo" class="nav_logo" />
+        <img src="img/netflix-avatar.png" alt="netflix avatar" class="nav_avatar" />
+    </div>
+
+    -->
+
+                                                <!-- Header -->
+    <div class="banner">
+        <div class="banner__contents">
+            <h1 class="banner__title"> Boston Central Event 2022 Sponsored by Netflix </h1>
+            <div class="banner__buttons">
+                <button class="banner__button">Watch the schedule</button>
+                <button class="banner__button">Take your ticket now</button>
+            </div>
+
+            <div class="banner_description">
+                Come here in Boston to enjoy the biggest event of this summer watch your favorite film
+                and sceries with your friends and your family members in the beautiful Boston garden 
+                sponsored by Netflix.
+            </div>
+        </div>
+
+        <div class="banner__bottom"></div>
+    </div>
+                                
                                                  <!-- First posters -->       
     <div class="row">
         <h2>Boston Central</h2>
@@ -40,7 +68,7 @@
                                                 <!-- Unmissable -->
     
      <div class="row">
-        <h2>Unmissable</h2>
+        <h2>Unmi</h2>
         <div class="row__posters">
             <img src="img/small-movie8.jpg" alt="Poster img 1" class="row__poster ">
             <img src="img/small-movie7.jpg" alt="Poster img 2" class="row__poster ">
@@ -54,7 +82,7 @@
     </div>
                                                 <!-- Anime -->    
                                                 
-                                                 <div class="row">
+     <div class="row">
         <h2>Anime</h2>
         <div class="row__posters">
             <img src="img/small-movie8.jpg" alt="Poster img 1" class="row__poster ">
@@ -67,5 +95,21 @@
             <img src="img/small-movie1.jpg" alt="Poster img 8" class="row__poster ">
         </div>
     </div>
+
+    <script>
+        const nav = document.getElementById('nav');
+
+        window.addEventListener('scroll', () => 
+        {
+            if (window.screenY >= 100)
+            {
+                nav.classList.add('black__nav');
+            }
+            else
+            {
+                nav.classList.remove('black__nav');
+            }
+        })
+    </script>
 </body>
 </html>
